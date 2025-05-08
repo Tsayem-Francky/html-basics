@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Responsive Page</title>
+</head>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: aqua;
+  color: whitesmoke;
+}
+
+header {
+  background-color: whitesmoke;
+  color: aqua;
+  padding: 1rem;
+  text-align: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.nav-links a {
+  color: aqua;
+  text-decoration: none;
+}
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+  background-color: whitesmoke;
+}
+
+.about img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.skills {
+  background-color: aqua;
+  padding: 2rem;
+  text-align: center;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.skill-card {
+  background: whitesmoke;
+  color: aqua;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+}
+
+.contact {
+  padding: 2rem;
+  background-color: aqua;
+}
+
+.contact form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact input, .contact textarea {
+  padding: 0.8rem;
+  border: 1px solid aqua;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.contact button {
+  background-color: whitesmoke;
+  color: aqua;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+</style>
+<body>
+  <header>
+    <h1>NGOUFFO TSAYEM FRANCKY</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="about">
+      <img src="C:\Users\PC\Desktop\CHITECHMA2025\IMG_1789[1].JPG" alt="" width="200" height="300">
+      <div>
+        <h2>About Me</h2>
+        <p>Hi! I'm a web developer passionate about building user-friendly websites and also determined to become a renound software enginear.</p>
+        <p>Contact: tsayemfrancky@gmail.com</p>
+      </div>
+    </section>
+
+    <section class="skills">
+      <h2>My Web Development Skills</h2>
+      <div class="skills-list">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">eact</div>
+        <div class="skill">Git & GitHub</div>
+      </div>
+    </section>
+    <section class="contact">
+      <h2>Contact Me</h2>
+      <form>
+        <input type="text" placeholder="Full Name:" required />
+        <input type="email" placeholder="Email:" required />
+        <textarea placeholder="Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  
+    </div>
+  
+</body>
+</html>
+
+
